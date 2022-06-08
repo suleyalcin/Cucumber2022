@@ -4,6 +4,6 @@
     @parametre
     Scenario: TC06 kullanici parametre ile amazonda arama yapabilmeli
       Given kullanici amazon anasayfasinda
-      And kullanici "Nutella" icin arama yapar
-      And sonucun "Nutella" icerdigini test eder
+      And kullanici "Java" icin arama yapar
+      And sonucun "Hava" icerdigini test eder
       Then sayfayi kapatir
