@@ -11,19 +11,23 @@ import java.util.List;
 public class GuruStepDefinitions {
 
     GuruPage guruPage=new GuruPage();
+
     @Given("cookies sorulursa kabul eder")
     public void cookies_sorulursa_kabul_eder() {
-        Driver.getDriver().switchTo().frame(guruPage.cookiesIframe);
+
+        //Driver.getDriver().switchTo().frame(guruPage.cookiesIframe);
         guruPage.acceptCookies.click();
+
     }
     @Given("{string}, sutunundaki tum degerleri yazdirir")
     public void sutunundaki_tum_degerleri_yazdirir(String istenenSutun) {
 
-        List<WebElement> tabloBaslikListesi= (List<WebElement>) guruPage.baslikListesi;
+        List<WebElement> tabloBaslikListesi= guruPage.baslikListesi;
         // listemiz webelementlerden olusuyor
         // dolayisiyla bu webelementlerden hangisi
         // istenen sutun basligini tasiyor bilemeyiz
         int istenenBaslikIndexi=-3;//tablo indexinde olma ihtimali olmaya bir sayi atadik
+
         for (int i = 0; i < tabloBaslikListesi.size(); i++) {
             if (tabloBaslikListesi.get(i).getText().equals(istenenSutun)){
                 istenenBaslikIndexi=i+1;
@@ -45,7 +49,9 @@ public class GuruStepDefinitions {
 
 
         } else{ // baslik bulunamadi
+            System.out.println("******************************");
             System.out.println("istenen baslik bulunamadi");
+            System.out.println("*******************************");
         }
 
     }

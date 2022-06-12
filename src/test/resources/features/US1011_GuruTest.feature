@@ -1,5 +1,5 @@
 Feature: US1011 web tablosundaki istenen sutunu yazdirma
-
+  @guru @pr2
   Scenario: TC16 kullanici sutun basligi ile liste alabilmeli
 
 
@@ -7,5 +7,5 @@ Feature: US1011 web tablosundaki istenen sutunu yazdirma
     Given kullanici "guruUrl" anasayfasinda
     And kullanici 3 sn bekler
    # And cookies sorulursa kabul eder
-    And "Company sutunundaki", sutunundaki tum degerleri yazdirir
+    And "Prev Close (Rs)", sutunundaki tum degerleri yazdirir
     Then sayfayi kapatir

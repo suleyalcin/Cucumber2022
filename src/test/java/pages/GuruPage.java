@@ -15,6 +15,7 @@ public class GuruPage {
     @FindBy(xpath = "//*[text()='Accept All']")
     public WebElement acceptCookies;
 
+
     @FindBy(xpath = "//thead//tr//th")
     public List<WebElement> baslikListesi;
 

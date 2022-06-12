@@ -6,27 +6,28 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin={"html:target/cucumber-reports.html"},
+        plugin={"html:target/cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
         features = "src/test/resources/features",
         glue="stepDefinitions",
-        tags= "@guru",
+        tags= "@aut",
         dryRun = false
 )
+
 public class TestRunner {
     /*
-    Bir frameworkte bir tek Runner Class'i yeterli olabilir.
-    Runner class'inda hic bir sey olmaz
-    Runner classimizi onemli yapan iki adet annotain vardir
-    @RunWith(Cucumber.class) notasyonu Runner Class'ina calsima ozelligi katar
+    Bir framework'de bir tek Runner class'i yeterli olabilir
+    Runner class'inda class body'sinde hic bir sey olmaz
+    Runner class'imizi onemli yapan 2 adet annotaion vardir
+    @RunWith(Cucumber.class) notasyonu Runner class'ina calisma ozelligi katar
     Bu notasyon oldugu icin Cucumber framework'umuzde JUnit kullanmayi tercih ediyoruz
-
     features : Runner dosyasinin feature dosyalarini nereden bulacagini tarif eder
     glue : step definitions dosyalarini nerede bulacagimizi gosterir
-    tags : o an hangi tag'i calsitirmak istiyorsak onu belli eder
-
-    dryRun : iki secenek var
-    dryRun=true; yazdigimizda Testimizi calistirmadan sadece eksik adimlari bize verir.
-    drRun=false yazdigimizda testlerimizi calistirir
-
+    tags : o an hangi tag'i calistirmak istiyorsak onu belli eder
+   dryRun : iki secenek var
+   dryRun=true; yazdigimizda Testimizi calistirmadan sadece eksik adimlari bize verir
+   deyRun=false yazdigimizda testlerimizi calistirir
      */
 }

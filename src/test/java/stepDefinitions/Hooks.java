@@ -16,7 +16,9 @@ public class Hooks {
  Cucumber'da @before @after kullanma ihtiyacimiz olursa bunu
  stepdefinitions pakage;i altinda olusturacagimiz hooks classina koyariz
 
- biz her scenario'dan sonra
+ biz her scenario'dan sonra test sonucunu
+ kontrol edip failed olan scenario'lar icin screenshot almasi amaciyla
+  @After metodu kullanacagiz
      */
 
     @After
