@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.232">
+    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="15.056">
+        <system-out>
+            <![CDATA[Given kullanici "automationUrl" anasayfasinda...............................passed
+And user sign in linkine tiklar.............................................passed
+And user Create and account bolumune email adresi girer.....................passed
+And Create an Account butonuna basar........................................passed
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................passed
+And user Register butonuna basar............................................passed
+Then hesap olustugunu dogrulayin............................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
