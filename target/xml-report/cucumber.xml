@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.232">
-    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="15.056">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="13.982">
+    <testcase classname="US1012 Kullanici register yapabilmeli" name="TC17 kullanici uygun datalarla register olabilmeli" time="13.802">
         <system-out>
             <![CDATA[Given kullanici "automationUrl" anasayfasinda...............................passed
 And user sign in linkine tiklar.............................................passed
