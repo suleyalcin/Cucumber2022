@@ -28,6 +28,6 @@ public class TestRunner {
     tags : o an hangi tag'i calistirmak istiyorsak onu belli eder
    dryRun : iki secenek var
    dryRun=true; yazdigimizda Testimizi calistirmadan sadece eksik adimlari bize verir
-   deyRun=false yazdigimizda testlerimizi calistirir
+   dryRun=false yazdigimizda testlerimizi calistirir
      */
 }
